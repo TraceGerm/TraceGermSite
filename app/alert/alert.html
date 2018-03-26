@@ -1,0 +1,24 @@
+<table class="table table-striped" name="alerts-table">
+    <thead>
+    <tr>
+        <th name="username-header">Username</th>
+        <th name="alert-time-header">Alert Time</th>
+        <th name="accepted-header">Accept</th>
+        <th name="remove-header">Remove</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="alert in alerts">
+        <td class="filterable-cell" name="alert-{{username}}">{{alert.user.username}}</td>
+        <td class="filterable-cell">{{alert.timestamp}}</td>
+        <td class="filterable-cell">
+            <button class="btn btn-primary" name="accept-button" ng-click="acceptAlert(alert)">Accept</button>
+        </td>
+        <td class="filterable-cell">
+            <button class="btn btn-warning" name="remove-button" ng-click="removeAlert(alert.id)">Remove</button>
+        </td>
+    </tr>
+
+    </tbody>
+
+</table>

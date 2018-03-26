@@ -1,0 +1,12 @@
+<div class="container">
+    <form class="form-signin" ng-submit="login()">
+        <h1 class="text-center">TraceGerm</h1>
+        <label for="inputUsername">Username</label>
+        <input type="text" id="inputUsername" ng-model="loginInfo.username" class="form-control" placeholder="Username"
+               required autofocus>
+        <label for="inputPassword">Password</label>
+        <input type="password" id="inputPassword" ng-model="loginInfo.password" class="form-control"
+               placeholder="Password" required>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+</div>
